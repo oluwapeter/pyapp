@@ -1,14 +1,15 @@
 """Grading app"""
 
-score = int(input("what is your score? "))
+name = input("what is your name: ")
+score = float(input("what is your score? "))
 
-if score > 80:
+if 80 <= score <= 100:
   print("Excellent")
-elif score > 60:
+elif 60 <= score <= 79:
   print("Very Good")
-elif score > 40:
+elif 40 <= score <= 59:
   print("Good")
-elif score > 20:
-  print("Good")
+elif 0 <= score <= 39:
+  print("Fair")
 else:
-  print("Poor")
+  print("Invalid number")
